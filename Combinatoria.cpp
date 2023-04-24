@@ -1,13 +1,15 @@
 #include <stdio.h>
+
 int p(int n){
     int resultado = 1;
     int k = 0;
     
     k = 1;
-    while( k <= n )  {
+    do {
         resultado = resultado * k;
         k = k + 1;
-    } 
+    } while( k <= n );
+    
     return resultado;
 }
 
@@ -26,7 +28,8 @@ int pAn(int a[], int n){
     } 
     return p(suma)/producto;   
 }
-	int main(){
+
+int main(){
     printf("######################################\n");
     printf("##   CALCULOS DE COMBINATORIA       ##\n");
     printf("######################################\n");
